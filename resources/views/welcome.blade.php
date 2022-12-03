@@ -24,6 +24,7 @@
             @csrf
             <div class="row">
                 <div class="col-md-4">
+                    <label for="nombre-actividad">nombre-actividad</label>
                     <div class="form-group mb-3">
                         <select class="form-select" aria-label="Default select example" name="users_id" id="users_id">
                             @foreach ($respuesta['users'] as $user)
@@ -35,6 +36,7 @@
                 </div>
 
                 <div class="col-md-4">
+                    <label for="nombre-actividad">Fecha</label>
                     <div class="form-group mb-3">
                         <div class="input-group">
                             <span class="input-group-text" >Fecha</span>
@@ -45,6 +47,7 @@
                 </div>
 
                 <div class="col-md-4">
+                    <label for="nombre-actividad">Hora Inicio</label>
                     <div class="form-group mb-3">
                         <div class="input-group">
                             <span class="input-group-text" >Hora Inicio</span>
@@ -55,6 +58,7 @@
                 </div>
 
                 <div class="col-md-4">
+                    <label for="nombre-actividad">Hora Final</label>
                     <div class="form-group mb-3">
                         <div class="input-group">
                             <span class="input-group-text" >Hora Final</span>
@@ -65,6 +69,7 @@
                 </div>
 
                 <div class="col-md-4">
+                    <label for="nombre-actividad">Derechos culturales</label>
                     <div class="form-group mb-3">
                         <select class="form-select" aria-label="Default select example" name="derechos_culturales_id" id="derechos_culturales_id">
                             @foreach ($respuesta['derechos'] as $derecho)
@@ -75,6 +80,7 @@
                 </div>
 
                 <div class="col-md-4">
+                    <label for="nombre-actividad">Nacs</label>
                     <div class="form-group mb-3">
                         <select class="form-select" aria-label="Default select example" name="nacs_id" id="nacs_id">
                             @foreach ($respuesta['nacs'] as $nac)
@@ -85,6 +91,7 @@
                 </div>
 
                 <div class="col-md-4">
+                    <label for="nombre-actividad">Experticios</label>
                     <div class="form-group mb-3">
                         <select class="form-select" aria-label="Default select example" name="experticias_id" id="experticias_id">
                             @foreach ($respuesta['experticios'] as $experticio)
@@ -121,7 +128,6 @@
 
                 @foreach($respuesta['listados'] as $listado)
                 <tr>
-                    <th scope="row"></th>
                     <td>{{ $listado->id }}</td>
                     <td>{{ $listado->consecutivo }}</td>
                     <td>{{ $listado['users']['nombre']}}</td>
